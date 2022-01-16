@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -23,5 +25,13 @@ Route::get('/dashboard', function () {
 
 Route::view('/success-checkout', 'success-checkout');
 Route::view('/checkout', 'checkout');
+
+
+
+
+// Socialte routes
+Route::get('sign-in-gogle',[UserController::class, 'google'])->name('login-with-google');
+Route::get('auth/google/callback',[UserController::class, 'handleProviderCallback'])->name('handleCallback');
+
 
 require __DIR__.'/auth.php';

@@ -1,5 +1,10 @@
 @extends('layouts.app')
 
+
+@section('title')
+    Page
+@endsection
+
 @section('content')
     <section class="banner">
         <div class="container">
