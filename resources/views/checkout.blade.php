@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+    Checkout
+@endsection
+
 @section('content')
 
     <section class="checkout">

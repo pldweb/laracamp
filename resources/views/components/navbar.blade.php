@@ -47,7 +47,7 @@
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <a href="/login" class="btn btn-master btn-secondary me-3">
+                    <a href="/login/admin" class="btn btn-master btn-secondary me-3">
                         Sign In
                     </a>
                     <a href="#" class="btn btn-master btn-primary">
